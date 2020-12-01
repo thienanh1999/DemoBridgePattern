@@ -1,4 +1,4 @@
-public class DefenseObject {
+public class DefenseObject implements DefenseObjectInterface{
 
     private DefenseInterface defenseObject;
 
@@ -6,6 +6,7 @@ public class DefenseObject {
         this.defenseObject = defenseObject;
     }
 
+    @java.lang.Override
     public void attack() {
         this.defenseObject.attack();
     }
